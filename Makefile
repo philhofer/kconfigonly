@@ -1,4 +1,4 @@
-KERNVER=4.19.19
+KERNVER=4.19.30
 
 kbuild-${KERNVER}.tar.gz: linux-${KERNVER}.tar.xz
 	./extract.sh $< $@
