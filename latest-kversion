@@ -1,0 +1,3 @@
+#!/bin/sh -e
+# pull the latest longterm kernel version from kernel.org
+echo "KERNVER :=" $(curl -s https://www.kernel.org/releases.json | jq -r '[.releases[] | select(.moniker == "longterm")][0].version')
